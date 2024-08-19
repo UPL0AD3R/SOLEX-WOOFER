@@ -110,7 +110,7 @@ function Library:Create(xHubName,xGameName)
 	HubName.BorderSizePixel = 0
 	HubName.Position = UDim2.new(0, 0, 0.024324324, 0)
 	HubName.Size = UDim2.new(0, 140, 0, 21)
-	HubName.Font = Enum.Font.Gotham
+	HubName.Font = Enum.Font.GothamBlack
 	HubName.Text = xHubName
 	HubName.TextColor3 = Color3.fromRGB(255, 255, 255)
 	HubName.TextSize = 16.000
@@ -273,7 +273,7 @@ function Library:Create(xHubName,xGameName)
 
 			Label.MouseEnter:Connect(function()
 				game:GetService("TweenService"):Create(LabelFrame, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(63, 83, 255)
+					BackgroundColor3 = Color3.fromRGB(255, 65, 68)
 				}):Play()
 			end)
 			Label.MouseLeave:Connect(function()
@@ -394,7 +394,7 @@ function Library:Create(xHubName,xGameName)
 
 			ToggleF.Name = "ToggleF"
 			ToggleF.Parent = ToggleFrame
-			ToggleF.BackgroundColor3 = Color3.fromRGB(55, 55, 75)
+			ToggleF.BackgroundColor3 = Color3.fromRGB(75, 54, 54)
 			ToggleF.BackgroundTransparency = 0
 			ToggleF.BorderSizePixel = 0
 			ToggleF.Position = UDim2.new(0.867647052, 0, 0.142857149, 0)
@@ -406,7 +406,7 @@ function Library:Create(xHubName,xGameName)
 
 			ToggleButton.Name = "ToggleButton"
 			ToggleButton.Parent = ToggleF
-			ToggleButton.BackgroundColor3 = Color3.fromRGB(55, 55, 75)
+			ToggleButton.BackgroundColor3 = Color3.fromRGB(75, 51, 51)
 			ToggleButton.BackgroundTransparency = 1
 			ToggleButton.BorderSizePixel = 0
 			ToggleButton.Size = UDim2.new(0, 45, 0, 23)
@@ -432,7 +432,7 @@ function Library:Create(xHubName,xGameName)
 					game:GetService("TweenService"):Create(ToggleF, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(251, 47, 51)}):Play() 
 					game:GetService("TweenService"):Create(ToggleCircle, TweenInfo.new(0.3), {Position = UDim2.new(0.559, 0,0.153, 0)}):Play() 
 				else
-					game:GetService("TweenService"):Create(ToggleF, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(55, 55, 75)}):Play() 
+					game:GetService("TweenService"):Create(ToggleF, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(75, 51, 52)}):Play() 
 					game:GetService("TweenService"):Create(ToggleCircle, TweenInfo.new(0.3), {Position = UDim2.new(0.093, 0,0.153, 0)}):Play() 
 				end
 				pcall(Callback,ToggleEnabled)
@@ -465,7 +465,7 @@ function Library:Create(xHubName,xGameName)
 
 			SliderButton.Name = "SliderButton"
 			SliderButton.Parent = SliderFrame
-			SliderButton.BackgroundColor3 = Color3.fromRGB(55, 55, 75)
+			SliderButton.BackgroundColor3 = Color3.fromRGB(75, 51, 51)
 			SliderButton.BorderSizePixel = 0
 			SliderButton.Position = UDim2.new(0.0242369417, 0, 0.639999986, 0)
 			SliderButton.Size = UDim2.new(0, 389, 0, 10)
