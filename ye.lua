@@ -150,7 +150,7 @@ function Library:Create(xHubName,xGameName)
 	GameName.BorderSizePixel = 0
 	GameName.Position = UDim2.new(-0.00714285718, 0, 0.0810810775, 0)
 	GameName.Size = UDim2.new(0, 141, 0, 25)
-	GameName.Font = Enum.Font.Gotham
+	GameName.Font = Enum.Font.GothamBlack
 	GameName.Text = xGameName
 	GameName.TextColor3 = Color3.fromRGB(190, 190, 190)
 	GameName.TextSize = 14.000
