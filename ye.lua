@@ -80,7 +80,7 @@ function Library:Create(xHubName,xGameName)
 
 	Main.Name = "Main"
 	Main.Parent = ScreenGui
-	Main.BackgroundColor3 = Color3.fromRGB(31, 30, 46)
+	Main.BackgroundColor3 = Color3.fromRGB(46, 30, 30)
 	Main.Position = UDim2.new(0.278277636, 0, 0.281287253, 0)
 	Main.Size = UDim2.new(0, 580, 0, 370)
 
@@ -117,7 +117,7 @@ function Library:Create(xHubName,xGameName)
 
 	Line.Name = "Line"
 	Line.Parent = Sidebar
-	Line.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+	Line.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 	Line.BorderSizePixel = 0
 	Line.Position = UDim2.new(0.0642857179, 0, 0.148648649, 0)
 	Line.Size = UDim2.new(0, 121, 0, 2)
@@ -186,7 +186,7 @@ function Library:Create(xHubName,xGameName)
 		Tab.Parent = Tabs
 		Tab.Active = true
 		Tab.Visible = xVisible
-		Tab.BackgroundColor3 = Color3.fromRGB(31, 30, 46)
+		Tab.BackgroundColor3 = Color3.fromRGB(46, 31, 31)
 		Tab.BorderSizePixel = 0
 		Tab.Size = UDim2.new(0, 438, 0, 352)
 		Tab.ScrollBarThickness = 5
@@ -199,7 +199,7 @@ function Library:Create(xHubName,xGameName)
 
 		TabButton.Name = "TabButton"
 		TabButton.Parent = ActualSide
-		TabButton.BackgroundColor3 = Color3.fromRGB(55, 74, 251)
+		TabButton.BackgroundColor3 = Color3.fromRGB(251, 54, 57)
 		TabButton.BorderSizePixel = 0
 		TabButton.Size = UDim2.new(0, 139, 0, 35)
 		TabButton.Font = Enum.Font.Gotham
@@ -213,7 +213,7 @@ function Library:Create(xHubName,xGameName)
 		Tab.ChildRemoved:Connect(Size)
 
 		if xVisible then 
-			TabButton.BackgroundColor3 = Color3.fromRGB(55, 74, 251)
+			TabButton.BackgroundColor3 = Color3.fromRGB(251, 50, 54)
 			TabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		else 
 			TabButton.BackgroundColor3 = Color3.fromRGB(60, 41, 42)
@@ -235,7 +235,7 @@ function Library:Create(xHubName,xGameName)
 
 			Tab.Visible = true
 			game:GetService("TweenService"):Create(TabButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-				BackgroundColor3 = Color3.fromRGB(55, 74, 251)
+				BackgroundColor3 = Color3.fromRGB(251, 54, 57)
 			}):Play()
 			game:GetService("TweenService"):Create(TabButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
 				TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -253,7 +253,7 @@ function Library:Create(xHubName,xGameName)
 
 			LabelFrame.Name = tostring(Name).."_Label"
 			LabelFrame.Parent = Tab
-			LabelFrame.BackgroundColor3 = Color3.fromRGB(55, 74, 251)
+			LabelFrame.BackgroundColor3 = Color3.fromRGB(251, 54, 57)
 			LabelFrame.Position = UDim2.new(0.0456621014, 0, 0, 0)
 			LabelFrame.Size = UDim2.new(0, 408, 0, 35)
 
@@ -278,7 +278,7 @@ function Library:Create(xHubName,xGameName)
 			end)
 			Label.MouseLeave:Connect(function()
 				game:GetService("TweenService"):Create(LabelFrame, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(55, 74, 251)
+					BackgroundColor3 = Color3.fromRGB(251, 54, 57)
 				}):Play()
 			end)
 
@@ -327,7 +327,7 @@ function Library:Create(xHubName,xGameName)
 
 			Button.MouseButton1Down:Connect(function()
 				game:GetService("TweenService"):Create(Button, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(55, 74, 251)
+					BackgroundColor3 = Color3.fromRGB(251, 54, 57)
 				}):Play()
 				wait(0.1)
 				game:GetService("TweenService"):Create(Button, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
@@ -338,7 +338,7 @@ function Library:Create(xHubName,xGameName)
 
 			Button.MouseEnter:Connect(function()
 				game:GetService("TweenService"):Create(Button, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(48, 51, 70)
+					BackgroundColor3 = Color3.fromRGB(70, 46, 47)
 				}):Play()
 			end)
 			Button.MouseLeave:Connect(function()
@@ -613,7 +613,7 @@ function Library:Create(xHubName,xGameName)
 
 			Textbox.Focused:Connect(function()
 				game:GetService("TweenService"):Create(Textbox, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(55, 74, 251)
+					BackgroundColor3 = Color3.fromRGB(251, 54, 57)
 				}):Play()
 			end)
 
@@ -677,7 +677,7 @@ function Library:Create(xHubName,xGameName)
 
 			KeybindButton.MouseButton1Click:connect(function() 
 				game.TweenService:Create(KeybindButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(55, 74, 251)
+					BackgroundColor3 = Color3.fromRGB(251, 54, 57)
 				}):Play()
 				KeybindButton.Text = ". . ."
 				local v1, v2 = game:GetService('UserInputService').InputBegan:wait();
@@ -784,7 +784,7 @@ function Library:Create(xHubName,xGameName)
 
 			DropdownButton.MouseEnter:Connect(function()
 				game:GetService("TweenService"):Create(DropdownFrame, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-					BackgroundColor3 = Color3.fromRGB(48, 51, 70)
+					BackgroundColor3 = Color3.fromRGB(70, 46, 47)
 				}):Play()
 			end)
 			DropdownButton.MouseLeave:Connect(function()
@@ -864,7 +864,7 @@ function Library:Create(xHubName,xGameName)
 
 				Option.MouseEnter:Connect(function()
 					game:GetService("TweenService"):Create(Option, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-						BackgroundColor3 = Color3.fromRGB(48, 51, 70)
+						BackgroundColor3 = Color3.fromRGB(70, 46, 47)
 					}):Play()
 				end)
 				Option.MouseLeave:Connect(function()
@@ -917,7 +917,7 @@ function Library:Create(xHubName,xGameName)
 
 					Option.MouseEnter:Connect(function()
 						game:GetService("TweenService"):Create(Option, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-							BackgroundColor3 = Color3.fromRGB(48, 51, 70)
+							BackgroundColor3 = Color3.fromRGB(70, 46, 47)
 						}):Play()
 					end)
 					Option.MouseLeave:Connect(function()
